@@ -19,3 +19,11 @@ enum class TetrominoType
     O     = 6,
     COUNT = 7
 };
+
+enum class ScoreMultiplayer
+{
+    SINGLE_LINE = 40,
+    DOUBLE_LINE = 100,
+    TRIPLE_LINE = 300,
+    TETRIS = 1000,
+};
