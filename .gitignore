@@ -1,3 +1,7 @@
+#Directories
+#CLion
+/.idea
+
 # Prerequisites
 *.d
 
