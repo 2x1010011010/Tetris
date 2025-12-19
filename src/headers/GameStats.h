@@ -19,5 +19,11 @@ private:
 
 public:
     GameStats() = default;
-    
+    [[nodiscard]] unsigned int getScore() const {return score_;}
+    [[nodiscard]] unsigned int getLevel() const {return level_;}
+    [[nodiscard]] unsigned int getLinesCleared() const {return linesCleared_;}
+    [[nodiscard]] float getGameTime() const {return static_cast <unsigned int> (gameTime_);}
+
+    void updateGameTime(const float deltaTime) {gameTime_ += deltaTime;}
+    void processLinesCleared(unsigned int linesClearedCount);
 };

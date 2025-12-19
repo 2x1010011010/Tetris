@@ -1,5 +1,11 @@
-//
-// Created by user on 12/17/2025.
-//
-
 #include "GameStats.h"
+
+void GameStats::checkLevelUp(unsigned int oldLines)
+{
+    if (linesCleared_ % LINES_PER_LEVEL < LEVEL_THRESHOLD &&
+        oldLines % LINES_PER_LEVEL >= LEVEL_THRESHOLD)
+    {
+        level_++;
+    }
+}
+
