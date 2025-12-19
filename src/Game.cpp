@@ -1,0 +1,43 @@
+#include <iostream>
+#include <random>
+
+#include "headers/Game.h"
+#include "const/GameConfig.h"
+
+Game::Game()
+{
+    window_(sf::VideoMode({GameConfig::WINDOW_WIDTH, GameConfig::WINDOW_HEIGHT}),
+            GameConfig::WINDOW_TITLE,
+            sf::Style::Titlebar | sf::Style::Close),
+
+    controller_(std::make_unique<GameController>()),
+    inputHandler_(std::make_unique<InputHandler>(*controller_, window_)),
+    renderer_(std::make_unique<UIRenderer>(window_))
+    {
+        window_.setVerticalSyncEnabled(true);
+        window_.setFramerateLimit(60);
+
+        renderer_->initialize();
+    }
+}
+
+void Game::run()
+{
+    sf::Clock clock;
+    while (window_->isOpen())
+    {
+        const float deltaTime = clock.restart().asSeconds();
+        handleEvents();
+        render();
+    }
+}
+
+void Game::handleEvents()
+{
+
+}
+
+void Game::render() const
+{
+
+}
