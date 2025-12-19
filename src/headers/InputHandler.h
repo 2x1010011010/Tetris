@@ -1,14 +1,26 @@
-//
-// Created by user on 12/17/2025.
-//
+#pragma once
 
-#ifndef TETRIS_INPUTHANDLER_H
-#define TETRIS_INPUTHANDLER_H
+#include <SFML/Graphics.hpp>
 
+#include <functional>
+#include <optional>
+#include <unordered_map>
+
+#include "GameController.h"
 
 class InputHandler
 {
+public:
+    explicit InputHandler(GameController& controller, sf::RenderWindow& window);
+    ~InputHandler() = default;
+
+    void handleKeyPress(sf::Keyboard::Key key);
+    void processEvent(const std::optional<sf::Event>& event);
+
+private:
+    GameController& controller_;
+    sf::RenderWindow& window_;
+    std::unordered_map<sf::Keyboard::Key, std::function<void()>> keyBindings_;
+
+    void setupKeyBindings();
 };
-
-
-#endif //TETRIS_INPUTHANDLER_H
