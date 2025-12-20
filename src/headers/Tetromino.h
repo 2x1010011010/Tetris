@@ -1,14 +1,8 @@
-//
-// Created by user on 12/17/2025.
-//
+#pragma once
 
-#ifndef TETRIS_TETROMINO_H
-#define TETRIS_TETROMINO_H
+#include <cfloat>
+#include <SFML/Graphics.hpp>
+#include <vector>
 
-
-class Tetromino
-{
-};
-
-
-#endif //TETRIS_TETROMINO_H
+#include "TetrominoShape.h"
+#include "const/TileConst.h"
