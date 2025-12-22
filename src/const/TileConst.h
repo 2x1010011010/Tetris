@@ -2,7 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "Enums.h"
+#include "const/Enums.h"
 
 constexpr int TILE_SIZE   = 30;
 constexpr int TILES_COUNT = static_cast<int>(TileColor::COUNT);

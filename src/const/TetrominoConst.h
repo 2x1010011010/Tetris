@@ -4,10 +4,9 @@
 #include <array>
 #include <vector>
 
-#include "Enums.h"
+#include "const/Enums.h"
 
 constexpr int TETROMINO_COUNT = static_cast<int>(TetrominoType::COUNT);
-
 
 inline std::unordered_map<TetrominoType, std::vector<std::array<int, 2>>> TETROMINO_SHAPES =
     {

@@ -3,8 +3,7 @@
 #include <array>
 #include <vector>
 
-#include "Enums.h"
-#include "TetrominoShape.h"
+#include "const/Enums.h"
 #include "const/TetrominoConst.h"
 
 struct Point
