@@ -27,3 +27,16 @@ enum class ScoreMultiplayer
     TRIPLE_LINE = 300,
     TETRIS = 1000,
 };
+
+enum class TileColor
+{
+    CYAN        = 0,
+    BLUE        = 1,
+    PURPLE      = 2,
+    PINK        = 3,
+    LIGHT_GREEN = 4,
+    YELLOW      = 5,
+    RED         = 6,
+    GREEN       = 7,
+    COUNT       = 8
+};
