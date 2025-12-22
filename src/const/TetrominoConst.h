@@ -6,9 +6,11 @@
 
 #include "Enums.h"
 
-constexpr int TETROMINO_COUNT = static_cast<int>(TetrominoType::COUNT);
+namespace Tetris::TetrominoConst
+{
+    constexpr int TETROMINO_COUNT = static_cast<int>(TetrominoType::COUNT);
 
-inline std::unordered_map<TetrominoType, std::vector<std::array<int, 2>>> TETROMINO_SHAPES =
+    inline std::unordered_map<TetrominoType, std::vector<std::array<int, 2>>> TETROMINO_SHAPES =
     {
         {TetrominoType::I, {{0, 0}, {0, -1}, {0, -2}, {0, -3}}},   // I-piece (horizontal line)
         {TetrominoType::O, {{0, 0}, {1, 0}, {0, -1}, {1, -1}}},    // O-piece (square)
@@ -19,12 +21,13 @@ inline std::unordered_map<TetrominoType, std::vector<std::array<int, 2>>> TETROM
         {TetrominoType::L, {{0, 0}, {-1, 0}, {1, 0}, {-1, -1}}}  // L-piece
     };
 
-inline std::unordered_map<TetrominoType, TileColor> TETROMINO_COLOR_MAP = {
-    {TetrominoType::I, TileColor::CYAN},
-    {TetrominoType::Z, TileColor::RED},
-    {TetrominoType::S, TileColor::GREEN},
-    {TetrominoType::T, TileColor::PURPLE},
-    {TetrominoType::L, TileColor::BLUE},
-    {TetrominoType::J, TileColor::PINK},
-    {TetrominoType::O, TileColor::YELLOW}
-};
+    inline std::unordered_map<TetrominoType, TileColor> TETROMINO_COLOR_MAP = {
+        {TetrominoType::I, TileColor::CYAN},
+        {TetrominoType::Z, TileColor::RED},
+        {TetrominoType::S, TileColor::GREEN},
+        {TetrominoType::T, TileColor::PURPLE},
+        {TetrominoType::L, TileColor::BLUE},
+        {TetrominoType::J, TileColor::PINK},
+        {TetrominoType::O, TileColor::YELLOW}
+    };
+}
