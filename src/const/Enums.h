@@ -40,3 +40,11 @@ enum class TileColor
     GREEN       = 7,
     COUNT       = 8
 };
+
+enum class TileDirection
+{
+    UP    = 0,
+    RIGHT = 1,
+    DOWN  = 2,
+    LEFT  = 3
+};

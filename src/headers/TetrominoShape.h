@@ -24,11 +24,10 @@ private:
 public:
     explicit TetrominoShape(const TetrominoType type) : type_(type) {}
 
-    [[nodiscard]] std::vector<Point> GetCoordinates() const
+    [[nodiscard]] std::vector<Point> getCoordinates() const
     {
         std::vector<Point> coordinates;
         const auto& shape = TetrominoConst::TETROMINO_SHAPES.at(type_);
-
         for (const auto& coord : shape)
         {
             coordinates.emplace_back(coord[0], coord[1]);

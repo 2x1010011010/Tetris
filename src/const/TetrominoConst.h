@@ -4,7 +4,7 @@
 #include <array>
 #include <vector>
 
-#include "const/Enums.h"
+#include "Enums.h"
 
 constexpr int TETROMINO_COUNT = static_cast<int>(TetrominoType::COUNT);
 
