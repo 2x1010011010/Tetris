@@ -38,4 +38,13 @@ public:
         return coordinates;
     };
 
+    [[nodiscard]] TileColor getColor() const
+    {
+        return TetrominoConst::TETROMINO_COLOR_MAP.at(type_);
+    }
+
+    [[nodiscard]] TetrominoType getType() const
+    {
+        return type_;
+    }
 };
