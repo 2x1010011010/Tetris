@@ -48,3 +48,9 @@ enum class TileDirection
     DOWN  = 2,
     LEFT  = 3
 };
+
+enum class Cell : int
+{
+    Empty  = 0,
+    Filled = 1
+};
