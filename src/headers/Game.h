@@ -3,9 +3,9 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 
-#include "GameController.h"
-#include "InputHandler.h"
-#include "UIRenderer.h"
+#include "headers/GameController.h"
+#include "headers/InputHandler.h"
+#include "headers/UIRenderer.h"
 
 
 class Game
