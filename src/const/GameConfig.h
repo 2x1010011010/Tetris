@@ -2,8 +2,8 @@
 
 struct GameConfig
 {
-    static constexpr int WINDOW_WIDTH = 800;
-    static constexpr int WINDOW_HEIGHT = 600;
+    static constexpr int WINDOW_WIDTH = 600;
+    static constexpr int WINDOW_HEIGHT = 800;
     static constexpr std::string WINDOW_TITLE = "Tetris";
 
     static constexpr float DROP_INTERVAL = 1.f;

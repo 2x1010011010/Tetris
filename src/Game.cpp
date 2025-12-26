@@ -1,8 +1,8 @@
 #include <iostream>
 #include <random>
 
-#include "headers/Game.h"
-#include "const/GameConfig.h"
+#include "Game.h"
+#include "GameConfig.h"
 
 Game::Game():
     window_(sf::VideoMode({GameConfig::WINDOW_WIDTH, GameConfig::WINDOW_HEIGHT}),
@@ -21,7 +21,7 @@ Game::Game():
 void Game::run()
 {
     sf::Clock clock;
-    while (window_->isOpen())
+    while (window_.isOpen())
     {
         const float deltaTime = clock.restart().asSeconds();
         handleEvents();

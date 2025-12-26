@@ -5,7 +5,7 @@
 #include <SFML/System/Vector2.hpp>
 
 #include "TileConst.h"
-#include "const/Enums.h"
+#include "Enums.h"
 
 class PlayField
 {

@@ -3,7 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 
-#include "headers/TileManager.h"
+#include "TileManager.h"
 
 class GameController;
 

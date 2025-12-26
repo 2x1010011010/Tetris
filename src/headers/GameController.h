@@ -5,10 +5,10 @@
 #include <SFML/System/Clock.hpp>
 #include <SFML/System/Time.hpp>
 
-#include "const/Enums.h"
-#include "headers/GameStats.h"
-#include "headers/Playfield.h"
-#include "headers/Tetromino.h"
+#include "Enums.h"
+#include "GameStats.h"
+#include "Playfield.h"
+#include "Tetromino.h"
 
 class GameController
 {

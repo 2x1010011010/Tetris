@@ -1,6 +1,6 @@
-#include "headers/GameController.h"
+#include "GameController.h"
 #include <SFML/System/Vector2.hpp>
-#include "const/GameConfig.h"
+#include "GameConfig.h"
 
 GameController::GameController()
         : state_(GameState::Start),

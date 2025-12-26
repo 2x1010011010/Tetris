@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "headers/TileManager.h"
+#include "TileManager.h"
 
 TileManager::TileManager()
 {

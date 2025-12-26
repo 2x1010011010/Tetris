@@ -5,7 +5,7 @@
 #include <vector>
 
 #include "TetrominoShape.h"
-#include "const/TileConst.h"
+#include "TileConst.h"
 
 class Tetromino
 {

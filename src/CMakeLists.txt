@@ -37,3 +37,12 @@ target_include_directories(Tetris
 )
 
 add_dependencies(Tetris copy_assets copy_fonts)
+
+if (WIN)
+    add_custom_command(TARGET Tetris POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            $<TARGET_RUNTIME_DLLS:Tetris>
+            $<TARGET_FILE_DIR:Tetris>
+            COMMAND_EXPAND_LISTS
+    )
+endif()

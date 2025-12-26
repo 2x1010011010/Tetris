@@ -1,8 +1,8 @@
-#include "headers/UIRenderer.h"
-#include "headers/GameController.h"
-#include "const/GameConfig.h"
-#include "headers/Tetromino.h"
-#include "headers/PlayField.h"
+#include "UIRenderer.h"
+#include "GameController.h"
+#include "GameConfig.h"
+#include "Tetromino.h"
+#include "PlayField.h"
 #include <iostream>
 
 #define ASSETS_DIR "../assets/"

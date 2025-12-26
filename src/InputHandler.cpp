@@ -1,5 +1,5 @@
-#include "headers/InputHandler.h"
-#include "headers/GameController.h"
+#include "InputHandler.h"
+#include "GameController.h"
 
 InputHandler::InputHandler(GameController& controller, sf::RenderWindow& window) :
     controller_(controller),

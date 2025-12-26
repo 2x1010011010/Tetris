@@ -1,5 +1,5 @@
-#include "headers/GameStats.h"
-#include "const/Enums.h"
+#include "GameStats.h"
+#include "Enums.h"
 
 void GameStats::checkLevelUp(unsigned int oldLines)
 {
