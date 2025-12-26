@@ -25,6 +25,7 @@ void Game::run()
     {
         const float deltaTime = clock.restart().asSeconds();
         handleEvents();
+        controller_->updateGame(deltaTime);
         render();
     }
 }
