@@ -399,7 +399,7 @@ void UIRenderer::updateGameStats(const GameController& controller)
     scoreNumberText_.setString(std::to_string(stats.getScore()));
     linesNumberText_.setString(std::to_string(stats.getLinesCleared()));
 
-    int seconds = static_cast<int>(stats.getGameTimeSeconds());
+    int seconds = static_cast<int>(stats.getGameTime());
     int minutes = seconds / 60;
     seconds %= 60;
     timeNumberText_.setString(

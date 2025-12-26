@@ -3,9 +3,9 @@
 #include "const/GameConfig.h"
 
 GameController::GameController()
-    : state_(GameState::Start),
-    gen_(rd_()), dis_(0,
-    static_cast<int>(TetrominoType::COUNT) - 1)
+        : state_(GameState::Start),
+        gen_(rd_()),
+        dis_(0, static_cast<int>(TetrominoType::COUNT) - 1)
     {
         initializeGame();
     }
@@ -137,7 +137,7 @@ void GameController::spawnNewPiece()
 
     if (!playfield_.canPlacePiece(currentPiece_->getPositions()) || playfield_.isGameOver())
     {
-        state_ = GameState::GameOver;
+            state_ = GameState::GameOver;
     }
 }
 
